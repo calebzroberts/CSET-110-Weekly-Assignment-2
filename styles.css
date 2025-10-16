@@ -338,3 +338,9 @@ html, body {
     margin: 40px auto 80px auto;
     font-size: 1.75em;
 }
+
+#purchaseMsg {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 0;
+}
