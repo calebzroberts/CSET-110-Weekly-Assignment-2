@@ -121,13 +121,7 @@ function UpdateTotal()
         totalPrice += (cart[i].itemPrice * cart[i].itemQuantity);
     }
 
-    totalPrice = totalPrice.toString();
-
-    //limit total price to only 2 decimal places
-    if (totalPrice.length > 5) 
-    {
-        totalPrice = totalPrice.substring(0, 5);
-    }
+    totalPrice = totalPrice.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
     totalPriceElement.innerText = `$${totalPrice}`;
 }
