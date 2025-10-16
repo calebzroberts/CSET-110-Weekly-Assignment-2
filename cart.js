@@ -31,7 +31,7 @@ function AddToCart(button)
     {
         let duplicateIndex = GetDuplicateIndex(title);
         //update item quantity
-        UpdateItemQuantity(duplicateIndex, (cart[duplicateIndex].itemQuantity + 1));
+        UpdateItemQuantity(duplicateIndex, (Number(cart[duplicateIndex].itemQuantity) + 1));
 
         return;
     }
